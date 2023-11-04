@@ -12,35 +12,35 @@
     <h1 class="heading-text">Sign Up for an account</h1>
     <div class="signup-box">
     
-        <form action="" method="post">
+        <form id="form" action="" method="post">
             <fieldset class="details">
                 <div>
                     <label for="first-name" class="label-firstname">First Name</label>
-                    <input id="first-name" name="first_name" type="text">
+                    <input id="first-name" name="first_name" type="text" required>
                 </div>
                 <div>
                     <label for="last-name" class="label-lastname">Last Name</label>
-                    <input type="text" name="last_name" id="last-name">
+                    <input type="text" name="last_name" id="last-name" required>
                 </div>
                 <div>
                     <label for="password" class="label-password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" minlength="6" required>
                 </div>
                 <div>
                     <label for="password-confirmation" class="label-passwordconfirmation">Re-enter Password</label>
-                    <input type="text" name="password_confirmation" id="password-confirmation">
+                    <input type="password" name="password_confirmation" id="password-confirmation" required>
                 </div>
                 <div>
                     <label for="email" class="label-email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div>
                     <label for="phone" class="label-phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone">
+                    <input type="text" name="phone" id="phone" required>
                 </div>
             </fieldset>
         </form>
-        <button id="submit" type="submit">Submit</button>
+        <button form="form" id="submit" type="submit">Submit</button>
     </div>
 </body>
 </html>
