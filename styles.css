@@ -7,6 +7,9 @@
   font-family: Poppins, sans-serif;
 }
 
+html{
+    filter: saturate(125%);
+}
 body{
     display: flex;
     justify-content: flex-start;
@@ -24,15 +27,42 @@ position: absolute;
   object-fit: cover;
   opacity: 1;
   z-index: -1;
+
+}
+header{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+.signup-text{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
+.underline{
+    content: "";
+    width: 200px;
+    height: 6px;
+    background-color: white;
+    margin-top: -30px;
+    position: relative;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+
+.login-text{
+    cursor: pointer;
+}
 h1{
-    margin: 35px auto;
+    margin: 25px auto;
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 50px;
+    font-size: 40px;
 }
+
+
 .details{
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +102,11 @@ input{
 input:last-child{
     margin-bottom: 90px;
 }
+
+#form{
+    transition-delay: 1s;
+    transition: 10s ease-in-out;
+}
 .signup-box{
      height: 600px;
     width: 850px;
@@ -90,6 +125,7 @@ input:last-child{
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0)
   );
+  transition: 0.4s ease-in-out;
 }
 
 label{
@@ -98,6 +134,8 @@ label{
 }
 
 button{
+    position: absolute;
+    bottom: 25px;
     height: 50px;
     width: 200px;
     margin-top: -30px;
@@ -117,6 +155,17 @@ button:active{
     box-shadow: none;
     opacity: 0.7;
 }
+
+.login-fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form{
+ display: none;
+ 
+}
+
 @media only screen and (max-width: 700px) {
   .signup-box{
     width: 80vw;
