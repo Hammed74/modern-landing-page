@@ -4,23 +4,24 @@ const signupBtn = document.querySelector(".signup-text")
 const signupForm = document.querySelector("#form")
 const loginForm = document.querySelector(".login-form")
 const signupBox = document.querySelector(".signup-box")
+const container = document.querySelector(".information-container")
+const button = document.querySelector("button")
 
 loginBtn.addEventListener("click", () => {
     underline.style.transform = "translateX(425px)"
-    signupForm.style.display = "none"
-    signupBox.style.width = "500px"
-    signupBox.style.justifyContent = "center"
-    signupBox.style.height = "450px"
-    signupBox.appendChild(loginForm)
-    loginForm.style.display = "flex"
+    container.style.transform = "translateX(-850px)"
+    signupBox.style.width = "400px"
+    signupBox.style.height = "500px"
+    button.style.marginTop = "-100px"
     
 })
 
 signupBtn.addEventListener("click", () => {
   underline.style.transform = "none";
-  loginForm.remove()
-  signupBox.style.width = ""
-  signupBox.style.height = ""
-  signupBox. justifyContent = ""
-  signupForm.style.display = ""
+  container.style.justifyContent = "";
+  signupBox.style.width = "";
+  signupBox.style.height = "";
+  container.style.transform = "translateX(0px)";
+  button.style.marginTop = "";
+
 });
